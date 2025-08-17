@@ -1,0 +1,141 @@
+.catalog-section {
+  padding: 80px 20px;
+  background-color: #f9f5f0;
+}
+
+.catalog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.catalog-content {
+  flex: 1;
+}
+
+.catalog-content h2 {
+  font-size: 2.5rem;
+  color: #ce4545;
+  margin-bottom: 20px;
+}
+
+.catalog-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.download-button {
+  background-color: #ce4545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  background-color: #b83a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-icon {
+  font-size: 1.3rem;
+}
+
+.catalog-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-preview {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  transition: transform 0.3s ease;
+}
+
+.catalog-preview:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.catalog-cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/catalogo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.catalog-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 69, 69, 0.7);
+  z-index: 1;
+}
+
+.catalog-cover h3, .catalog-cover h4, .catalog-cover p {
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-cover h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.catalog-cover h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.catalog-cover p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .catalog-container {
+    flex-direction: column;
+  }
+  
+  .catalog-content,
+  .catalog-image {
+    width: 100%;
+  }
+  
+  .catalog-content h2 {
+    font-size: 2rem;
+  }
+  
+  .catalog-preview {
+    margin-top: 30px;
+  }
+}

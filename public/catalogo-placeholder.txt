@@ -1,0 +1,2 @@
+Este é um arquivo de texto que serve como placeholder para o catálogo em PDF.
+Em um ambiente de produção, você substituiria este arquivo por um PDF real do catálogo da empresa Ágape Delícias Caseiras.

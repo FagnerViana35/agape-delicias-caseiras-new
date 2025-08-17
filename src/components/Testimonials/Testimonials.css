@@ -1,0 +1,137 @@
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ce4545;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  padding: 20px;
+}
+
+.testimonial-content {
+  background-color: #f9f5f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: #ce4545;
+  opacity: 0.2;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.author-role {
+  font-size: 0.9rem;
+  color: #ce4545;
+  margin: 0;
+}
+
+/* Customizando os controles do Slick */
+.testimonials-slider .slick-prev, 
+.testimonials-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.testimonials-slider .slick-prev {
+  left: -50px;
+}
+
+.testimonials-slider .slick-next {
+  right: -50px;
+}
+
+.testimonials-slider .slick-prev:before, 
+.testimonials-slider .slick-next:before {
+  color: #ce4545;
+  font-size: 40px;
+}
+
+.testimonials-slider .slick-dots li button:before {
+  color: #ce4545;
+  font-size: 12px;
+}
+
+.testimonials-slider .slick-dots li.slick-active button:before {
+  color: #ce4545;
+}
+
+@media (max-width: 768px) {
+  .testimonials-slider .slick-prev {
+    left: -20px;
+  }
+  
+  .testimonials-slider .slick-next {
+    right: -20px;
+  }
+  
+  .testimonial-content {
+    padding: 20px;
+  }
+}
